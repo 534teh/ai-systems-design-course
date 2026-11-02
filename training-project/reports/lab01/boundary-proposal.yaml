@@ -1,0 +1,21 @@
+# Candidate for Laboratory 01: normally AI-generated; student-authored only on the documented no-agent fallback.
+# Replace the instructional values, but preserve every field and keep status proposed.
+schema_version: "1.0"
+proposal_id: lab01-learning-system-boundary
+status: proposed
+personal_domain: Distributed systems and software architecture as a bounded non-sensitive professional extension area.
+intended_learning_outcome: Trace technical concepts to registered source evidence, reconcile candidate concepts against accepted concepts and typed relations, surface missing prerequisites and unresolved questions, and obtain answers grounded in retained canonical Markdown records.
+non_goals:
+  - Autonomously mutating canonical vault knowledge or approving candidate proposals without an explicit student decision.
+  - Eliciting replacement requirements, inventing application architecture in Laboratory 01, training foundation models from scratch, or making medical, financial, legal, or safety-critical decisions.
+governance:
+  ai_role: Interpret supplied source evidence, expose ambiguity, duplicates, contradictions, and uncertainty, and write candidate proposals without approving changes or mutating canonical state.
+  deterministic_role: Validate structural schemas and workflow invariants without altering canonical state, bind human decisions to the exact SHA-256 proposal digest, and apply only approved content.
+  human_role: Review source evidence and semantic meaning, complete semantic review questions, and explicitly approve or reject the exact proposal before any canonical mutation.
+usefulness_condition: The workflow is useful when every accepted concept, relation, and answer can be traced to version-resolved source provenance, a candidate proposal, a digest-bound student decision, and rebuildable derived views without silent hallucination or unapproved state mutation.
+material_risk: A plausible material failure is semantic rubber-stamping—treating structural validation success or fluent AI output as proof of semantic correctness, allowing unsupported or contradictory claims into canonical knowledge.
+non_ai_baseline: Manually authoring and cross-referencing Markdown source, concept, and question files in the external vault using plain-text editors, Git commit hashes, and deterministic schema validation scripts without AI candidate generation.
+uncertainty: The closed typed-relation vocabulary, reference architecture, numeric evaluation thresholds for retrieval and grounded answers, and technical actor-authenticated approval enforcement remain unresolved inputs to be supplied in later course modules.
+required_evidence:
+  - Deterministic structural validation passing without mutating canonical state, coupled with SHA-256 digest verification binding the student decision in boundary-decision.json to the exact proposal before application.
+  - Student-completed semantic review recorded in REPORT.md and a registered Module 01 source record in the external Markdown vault resolved to a 40-character Git commit hash.

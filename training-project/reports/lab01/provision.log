@@ -1,0 +1,151 @@
+﻿**********************
+Windows PowerShell transcript start
+Start time: 20261101234753
+Username: LAPTOP1\1
+RunAs User: LAPTOP1\1
+Configuration Name: 
+Machine: LAPTOP1 (Microsoft Windows NT 10.0.26200.0)
+Host Application: C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe
+Process ID: 24696
+PSVersion: 5.1.26100.9711
+PSEdition: Desktop
+PSCompatibleVersions: 1.0, 2.0, 3.0, 4.0, 5.0, 5.1.26100.9711
+BuildVersion: 10.0.26100.9711
+CLRVersion: 4.0.30319.42000
+WSManStackVersion: 3.0
+PSRemotingProtocolVersion: 2.3
+SerializationVersion: 1.1.0.1
+**********************
+Transcript started, output file is .\provision.log
+PS C:\Users\1\projects\ai-systems-design-course\training-project> winget configure --file .\fixtures\windows\lab01-workstation-windows11.dsc.yaml --accept-configuration-agreements
+OsVersion
+  Require Windows 11 or newer.
+  Module: Microsoft.Windows.Developer by Microsoft Corporation [PSGallery]
+    DSC Resource for Windows
+  Settings:
+    MinVersion: 10.0.22000
+WinGetPackage [git]
+  Git for Windows.
+  Module: Microsoft.WinGet.DSC by Microsoft Corporation [PSGallery]
+    PowerShell Module with DSC resources related to WinGet configurations
+  Settings:
+    id: Git.Git
+    source: winget
+WinGetPackage [uv]
+  uv, the Python project and environment manager.
+  Module: Microsoft.WinGet.DSC by Microsoft Corporation [PSGallery]
+    PowerShell Module with DSC resources related to WinGet configurations
+  Settings:
+    id: astral-sh.uv
+    source: winget
+WinGetPackage [github-cli]
+  GitHub CLI for fork and pull-request delivery.
+  Module: Microsoft.WinGet.DSC by Microsoft Corporation [PSGallery]
+    PowerShell Module with DSC resources related to WinGet configurations
+  Settings:
+    id: GitHub.cli
+    source: winget
+WinGetPackage [obsidian]
+  Obsidian, the Markdown vault editor.
+  Module: Microsoft.WinGet.DSC by Microsoft Corporation [PSGallery]
+    PowerShell Module with DSC resources related to WinGet configurations
+  Settings:
+    id: Obsidian.Obsidian
+    source: winget
+You are responsible for understanding the configuration settings you are choosing to execute. Microsoft
+is not responsible for the configuration file you have authored or imported. This configuration may chan
+ge settings in Windows, install software, change software settings (including security settings), and ac
+cept user agreements to third-party packages and services on your behalf.  By running this configuration
+ file, you acknowledge that you understand and agree to these resources and settings. Any applications i
+nstalled are licensed to you by their owners. Microsoft is not responsible for, nor does it grant any li
+censes to, third-party packages or services.
+OsVersion
+  Unit successfully applied.
+WinGetPackage [git]
+  Unit successfully applied.
+WinGetPackage [uv]
+  Unit successfully applied.
+WinGetPackage [github-cli]
+  Unit successfully applied.
+WinGetPackage [obsidian]
+  Unit successfully applied.
+Configuration successfully applied.
+PS C:\Users\1\projects\ai-systems-design-course\training-project> winget configure --file .\fixtures\windows\lab01-workstation-windows11.dsc.yaml --accept-configuration-agreements
+OsVersion
+  Require Windows 11 or newer.
+  Module: Microsoft.Windows.Developer by Microsoft Corporation [Local]
+    https://github.com/microsoft/winget-dsc
+    DSC Resource for Windows
+  Settings:
+    MinVersion: 10.0.22000
+WinGetPackage [git]
+  Git for Windows.
+  Module: Microsoft.WinGet.DSC by Microsoft Corporation [Local]
+    https://github.com/microsoft/winget-cli
+    PowerShell Module with DSC resources related to WinGet configurations
+  Settings:
+    id: Git.Git
+    source: winget
+WinGetPackage [uv]
+  uv, the Python project and environment manager.
+  Module: Microsoft.WinGet.DSC by Microsoft Corporation [Local]
+    https://github.com/microsoft/winget-cli
+    PowerShell Module with DSC resources related to WinGet configurations
+  Settings:
+    id: astral-sh.uv
+    source: winget
+WinGetPackage [github-cli]
+  GitHub CLI for fork and pull-request delivery.
+  Module: Microsoft.WinGet.DSC by Microsoft Corporation [Local]
+    https://github.com/microsoft/winget-cli
+    PowerShell Module with DSC resources related to WinGet configurations
+  Settings:
+    id: GitHub.cli
+    source: winget
+WinGetPackage [obsidian]
+  Obsidian, the Markdown vault editor.
+  Module: Microsoft.WinGet.DSC by Microsoft Corporation [Local]
+    https://github.com/microsoft/winget-cli
+    PowerShell Module with DSC resources related to WinGet configurations
+  Settings:
+    id: Obsidian.Obsidian
+    source: winget
+You are responsible for understanding the configuration settings you are choosing to execute. Microsoft
+is not responsible for the configuration file you have authored or imported. This configuration may chan
+ge settings in Windows, install software, change software settings (including security settings), and ac
+cept user agreements to third-party packages and services on your behalf.  By running this configuration
+ file, you acknowledge that you understand and agree to these resources and settings. Any applications i
+nstalled are licensed to you by their owners. Microsoft is not responsible for, nor does it grant any li
+censes to, third-party packages or services.
+OsVersion
+  Unit successfully applied.
+WinGetPackage [git]
+  Unit successfully applied.
+WinGetPackage [uv]
+  Unit successfully applied.
+WinGetPackage [github-cli]
+  Unit successfully applied.
+WinGetPackage [obsidian]
+  Unit successfully applied.
+Configuration successfully applied.
+PS C:\Users\1\projects\ai-systems-design-course\training-project> winget list --id Git.Git --exact --source winget
+Name Id      Version
+---------------------
+Git  Git.Git 2.56.0.4
+PS C:\Users\1\projects\ai-systems-design-course\training-project> winget list --id GitHub.cli --exact --source winget
+Name       Id         Version
+-----------------------------
+GitHub CLI GitHub.cli 2.103.3
+PS C:\Users\1\projects\ai-systems-design-course\training-project> winget list --id astral-sh.uv --exact --source winget
+Name Id           Version
+-------------------------
+uv   astral-sh.uv 0.13.6
+PS C:\Users\1\projects\ai-systems-design-course\training-project> winget list --id Obsidian.Obsidian --exact --source winget
+Name     Id                Version Available
+--------------------------------------------
+Obsidian Obsidian.Obsidian 1.9.12  1.14.5
+PS C:\Users\1\projects\ai-systems-design-course\training-project> Stop-Transcript
+**********************
+Windows PowerShell transcript end
+End time: 20261101235530
+**********************
